@@ -1,0 +1,67 @@
+useCallBack - это новый хук похож на useEffect, но отличия от него он преврашает функцию
+debounce -  исползуются инизит перформанс запроса 
+qs - исползуются для ссылки браузера он исползуются с useNavigate 
+useRef - мы использовали его для фокуса инпута
+
+
+Event Loop - это очеред задач в Javascript
+- Микро задачи
+- Макро задачи
+- и проста задачи
+Они добавяется в очеред
+
+axios, fetch и есть некоторие функции работает асинхронна
+
+Нашем прокте мы с помощю async await делаем наш функцию синхронна
+--- Promise -ы делает наобород синхроную коду преврашает в асинхронную
+
+ThunkAPI
+    - rejectWithValue, fulfillWithValue используется для добавление информации о запроса
+
+createAsyncThunk - БИЗНЕС ЛОГИКА а Redux Toolkit
+
+useLocation - он дает нам информацию об URL,и наш компонент перерисуется(rendering)
+
+
+//TYPESCRIPT
+function isName(name?:string) //имя здесь опцианальный аргумент
+
+Отличия type от interface в типизации это interface ом можно только типизивать объекты но type все !!!!
+
+Immmer JS это библеотека redux toolkit a, чтобы собретит мутации
+
+RENDERING
+перерисуется тогда когда изменяется state или props и еще useContext 
+
+
+
+CODE SPLITTING...
+ - Bundle - конечный Javascript файл
+ - chunks - это часть Bundle
+
+Lazy loading 
+ - Dynamic import - исползуются для снижении загрузки, на примере использовали помпонент Корзина 
+ - React.lazy and react loadable(рендерится в сервере)
+UX -User expirence
+
+
+
+tree shaking
+ -barel reexport
+
+File sizes after gzip:
+
+  89.66 kB  build\static\js\main.eb6fb855.js
+  2.6 kB    build\static\css\main.36e474e6.css
+  2.33 kB   build\static\js\Cart.12616496.chunk.js
+  704 B     build\static\js\FullPizza.03e43a77.chunk.js
+  456 B     build\static\js\NotFound.b66f6bc9.chunk.js
+  163 B     build\static\css\NotFound.87c53fa1.chunk.css
+  -----------------------------------------------------
+
+  
+  90.74 kB  build\static\js\main.2f807332.js
+  2.64 kB   build\static\css\main.dd623c19.css
+  1.51 kB   build\static\js\Cart.7cc764e0.chunk.js
+  704 B     build\static\js\FullPizza.03e43a77.chunk.js
+  236 B     build\static\js\NotFound.f0e9fa2a.chunk.js
